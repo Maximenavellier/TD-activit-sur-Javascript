@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="styletd2web.css">
+</head>
+<body>
+    <!-- Menu -->
+    <div id="menu">
+        <h2>Menu</h2>
+        <label><input type="checkbox" value="partie1"> Lien et images</label><br>
+        <label><input type="checkbox" value="partie2"> Éléments</label><br>
+        <label><input type="checkbox" value="partie3"> Barres de progression</label>
+        <hr>
+    </div>
+
+    <!-- Partie 1 -->
+    <div id="partie1">
+        <h1>Lien et images</h1>
+        <a href="https://www.wikipedia.org/" target="_blank">La page principale de Wikipedia</a><br>
+        <img src="logo_google.png" alt="Logo de Google" width="270"><hr width="350" align="left">
+    </div>
+
+    <!-- Partie 2 -->
+    <div id="partie2">
+        <h1>Des éléments !</h1>
+        <input type="text" id="barre1" placeholder="introduction a Javascript" style="width: 200px;"><br>
+        <input type="radio" id="choix1" name="choix" value="1">Choix n°1
+        <input type="radio" id="choix2" name="choix" value="2">Choix n°2
+        <input type="radio" id="choix3" name="choix" value="3">Choix n°3<br>
+        <input type="text" id="barre2" value="Texte" style="width: 200px;"><br>
+        <div class="volume-container">
+            <input type="range" id="volume" min="0" max="100" value="0">
+            <label for="volume"><b>Volume</b></label>
+            <span id="volume-value">0</span>
+        </div>
+        <label for="case">Mute</label>
+        <input type="checkbox" id="case" name="case"><br>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date"><br>
+        <button id="bouton-ok">Ok</button><hr width="350" align="left">
+    </div>
+
+    <!-- Partie 3 -->
+    <div id="partie3">
+        <h1>Barres de progression</h1>
+        <div style="display: flex; align-items: center;">
+            <p style="margin: 0 10px 0 0;">téléchargement en cours :</p>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <p style="margin: 0 10px 0 0;">espace disponible :</p>
+            <progress id="stockage-bar" value="0" max="100"></progress>
+        </div>
+        <hr width="350" align="left">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
